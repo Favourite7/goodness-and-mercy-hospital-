@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Goodness and Mercy Hospital | Ibadan, Nigeria</title>
+    <meta name="description" content="Book an appointment online at Goodness and Mercy Hospital. Schedule consultations, checkups, maternity visits, and more.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Emergency Hotline Banner -->
+    <div class="emergency-banner">
+        <span>🚨 Emergency Hotline: </span>
+        <a href="tel:+2348106090800">0810 609 0800</a>
+        <span> | Available 24 Hours a Day, 7 Days a Week | Call Now for Immediate Assistance</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">🏥</div>
+            <div class="logo-text">
+                <h1>Goodness and Mercy</h1>
+                <p>Hospital & Maternity Home</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="doctors.html">Medical Team</a></li>
+                <li><a href="gallery.html">Facility Gallery</a></li>
+                <li><a href="appointment.html" class="active">Book Appointment</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">☰</div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero appointment-hero">
+        <div class="page-hero-content">
+            <h2>Book Your Appointment</h2>
+            <p>Schedule Your Visit with Our Medical Team Quickly and Easily</p>
+        </div>
+    </section>
+
+    <!-- Appointment Info -->
+    <section class="appointment-info">
+        <div class="intro-content">
+            <h2>How to Book an Appointment</h2>
+            <p class="section-intro">Booking an appointment at Goodness and Mercy Hospital is simple and convenient. You can use our online form below, call us directly, or visit our hospital in person. Our team will confirm your appointment and send you a reminder. For emergency cases, please call our emergency hotline immediately or visit the hospital directly — no appointment needed for emergencies.</p>
+        </div>
+        <div class="booking-methods">
+            <div class="booking-method">
+                <div class="method-icon">📝</div>
+                <h4>Online Form</h4>
+                <p>Fill out the form below and we will contact you within 24 hours to confirm your appointment.</p>
+            </div>
+            <div class="booking-method">
+                <div class="method-icon">📞</div>
+                <h4>Call Us</h4>
+                <p>Call <strong>+234 810 609 0800</strong> during working hours to speak with our reception team.</p>
+            </div>
+            <div class="booking-method">
+                <div class="method-icon">🏥</div>
+                <h4>Walk In</h4>
+                <p>Visit our hospital at Lane L, No 9, Ajawele Area, Soka, Ibadan. Registration is available 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="appointment-form-section">
+        <div class="form-container">
+            <h2>Online Appointment Form</h2>
+            <p class="form-intro">Please fill in your details below. Fields marked with <span class="required">*</span> are required.</p>
+            
+            <form id="appointmentForm" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+234 801 234 5678" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Appointment Date <span class="required">*</span></label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time <span class="required">*</span></label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                            <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                            <option value="anytime">Anytime (Flexible)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="department">Department / Service <span class="required">*</span></label>
+                    <select id="department" name="department" required>
+                        <option value="">Select a department</option>
+                        <option value="general-medicine">General Medicine / Consultation</option>
+                        <option value="maternity">Maternity / Antenatal Care</option>
+                        <option value="paediatrics">Paediatrics / Child Health</option>
+                        <option value="laboratory">Laboratory / Diagnostics</option>
+                        <option value="pharmacy">Pharmacy Services</option>
+                        <option value="emergency">Emergency Care</option>
+                        <option value="dental">Dental Care</option>
+                        <option value="eye-care">Eye Care</option>
+                        <option value="other">Other (Please specify below)</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="doctor">Preferred Doctor (Optional)</label>
+                    <select id="doctor" name="doctor">
+                        <option value="">No preference — assign best available</option>
+                        <option value="adesoji-mayokun">Dr. Adesoji Mayokun</option>
+                        <option value="adesoji-olamide">Dr. Adesoji Olamide</option>
+                        <option value="any-doctor">Any Available Doctor</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="symptoms">Reason for Visit / Symptoms <span class="required">*</span></label>
+                    <textarea id="symptoms" name="symptoms" rows="4" placeholder="Please briefly describe your symptoms or reason for the appointment..." required></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="notes">Additional Notes (Optional)</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Any allergies, previous conditions, medications, or special requests..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="firstVisit" value="yes">
+                        <span>This is my first visit to Goodness and Mercy Hospital</span>
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="consent" required>
+                        <span>I consent to the hospital collecting my information for appointment scheduling purposes. <span class="required">*</span></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">Submit Appointment Request</button>
+            </form>
+
+            <div id="formSuccess" class="form-success" style="display: none;">
+                <div class="success-icon">✅</div>
+                <h3>Appointment Request Submitted!</h3>
+                <p>Thank you for choosing Goodness and Mercy Hospital. Our team will review your request and contact you within 24 hours at the phone number you provided to confirm your appointment details.</p>
+                <p><strong>What happens next:</strong></p>
+                <ul>
+                    <li>We will call you to confirm the date and time</li>
+                    <li>You will receive an appointment reminder via SMS</li>
+                    <li>Please arrive 15 minutes before your scheduled time</li>
+                    <li>Bring any previous medical records if available</li>
+                </ul>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Notes -->
+    <section class="appointment-notes">
+        <h2>Important Information for Patients</h2>
+        <div class="notes-grid">
+            <div class="note-card">
+                <div class="note-icon">⏰</div>
+                <h4>Arrive Early</h4>
+                <p>Please arrive at least 15 minutes before your scheduled appointment time to complete registration and any necessary paperwork.</p>
+            </div>
+            <div class="note-card">
+                <div class="note-icon">📋</div>
+                <h4>Bring Documents</h4>
+                <p>Bring a valid ID, any previous medical records, test results, and a list of current medications you are taking.</p>
+            </div>
+            <div class="note-card">
+                <div class="note-icon">💰</div>
+                <h4>Payment Options</h4>
+                <p>We accept cash, bank transfers, and major health insurance plans. Please inquire about insurance coverage when you arrive.</p>
+            </div>
+            <div class="note-card">
+                <div class="note-icon">🚫</div>
+                <h4>Cancellation Policy</h4>
+                <p>If you need to cancel or reschedule, please call us at least 24 hours in advance so we can offer the slot to another patient.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Need Immediate Medical Attention?</h2>
+        <p>For emergencies, please do not wait for an appointment. Call our emergency hotline or visit the hospital immediately.</p>
+        <a href="tel:+2348106090800" class="btn btn-white">Call Emergency: 0810 609 0800</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Goodness and Mercy Hospital</h3>
+                <p>Your trusted healthcare partner serving the Ibadan community with dedication, compassion, and excellence for over 24 years.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Our Hospital</a></li>
+                    <li><a href="services.html">Medical Services</a></li>
+                    <li><a href="doctors.html">Meet Our Doctors</a></li>
+                    <li><a href="appointment.html">Book an Appointment</a></li>
+                    <li><a href="contact.html">Contact Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Details</h4>
+                <p>📍 Lane L, House No 9, Ajawele Area, Soka, Ibadan, Oyo State, Nigeria</p>
+                <p>📞 Main Line: +234 810 609 0800</p>
+                <p>🚨 Emergency: 0810 609 0800</p>
+                <p>✉️ adesojimayokun3@gmail.com</p>
+                <p>✉️ adesojifavour7@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Operating Hours</h4>
+                <p>Monday - Sunday: 24 Hours Daily</p>
+                <p><strong>Emergency Department: Always Open — 24/7/365</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2002 - 2026 Goodness and Mercy Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
