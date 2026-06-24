@@ -180,11 +180,27 @@ nav ul li a.active {
     padding: 8px;
     border-radius: 8px;
     transition: background 0.3s ease;
+    background: transparent;
+    border: none;
+    color: #ffffff;
 }
 
 .mobile-menu-btn:hover {
     background: rgba(255, 255, 255, 0.15);
 }
+
+/*.mobile-menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}*/
 
 /* ========== HERO SECTION ========== */
 .hero {
